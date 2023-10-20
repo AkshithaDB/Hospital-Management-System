@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+:root{
+    --red:#B90E0A;
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    text-transform: capitalize;
+}
+
+*::selection{
+    background:var(--red);
+    color:#fff;
+}
+
+html ,body{
+    font-size: 62.5%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+
+.btn{
+    height:5rem;
+    width: 18rem;
+    color:#fff;
+    border:.2rem solid #fff;
+    outline:.2rem solid #fff;
+    outline-offset: -.8rem;
+    font-size: 2rem;
+    margin:1.5rem 0;
+    cursor: pointer;
+    background:none;
+}
+
+.btn:hover{
+    outline-offset: .4rem;
+    background:var(--red);
+}
+
+.heading{
+    text-align: center;
+    width: 90%;
+    margin:0 auto;
+    padding:0 .5rem;
+    padding-top: 6rem;
+    box-shadow: 0 .2rem .05rem rgba(0,0,0,.3);
+}
+
+.heading span{
+    display: inline-block;
+    font-size: 3.5rem;
+    color:var(--red);
+    padding:1rem 0;
+    box-shadow: 0 .2rem .05rem var(--red);
+}
+
+header .header-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a0c86;
+    padding:1rem 2rem;
+}
+
+header .header-1 .logo{
+    width:auto;
+    height: auto;
+    border-image: fill;
+}
+
+header .header-1 .call{
+    font-size: 2rem;
+    color:#0c0c0c;
+}
+header .header-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background:var(--red);
+    padding:.4rem;
+    position: relative;
+    z-index: 1000;
+}
+
+header .header-2 .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header .header-2 .navbar ul li{
+    margin:1rem;
+}
+
+header .header-2 .navbar ul li a{
+    font-size: 2rem;
+    color:#fff;
+}
+
+header .header-2 .navbar ul li a.active,
+header .header-2 .navbar ul li a:hover{
+    color:rgb(23, 18, 125);
+}
+
+header .header-2 .share a{
+    font-size: 2rem;
+    color:#fff;
+    margin:1rem;
+}
+
+header .header-2 .share a:hover{
+    color:rgb(23, 18, 125);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(190, 36, 56);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container{
+    position: relative;
+    text-size-adjust: 100%;
+}
+.container .wrapper{
+    width: 100vw;
+    height: 81vh;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    margin: cover;
+    overflow: hidden;
+}
+.container .wrapper-holder{
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 30s ease-in-out infinite alternate;
+}
+.container #slider-img-1{
+    background-image:url(Images/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.container #slider-img-2{
+    background-image:url(Images/2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container #slider-img-3{
+    background-image:url(Images/3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container #slider-img-4{
+    background-image:url(Images/4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hometext{
+    color: #0e0d0d;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Open Sans', sans-serif;
+    margin:0;
+    padding: 20rem;
+}
+.container .button-holder .button{
+    background-color: white;
+    width: 15px;
+    height: 12px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .3rem;
+}
+.container .button-holder{
+    position: absolute;
+    left: 45%;
+    bottom: 0%;
+}
+.button:hover{
+    box-shadow: 0px 0px 7px 4px rgba(122, 192, 179, 0.6);
+}
+
+@keyframes slider{
+    0%{ transform: translateX(0%);}
+    10%{ transform: translateX(-100%);}
+    20%{ transform: translateX(-100%);}
+    30%{ transform: translateX(-200%);}
+    40%{ transform: translateX(-200%);}
+    50%{ transform: translateX(-200%);}
+    60%{ transform: translateX(-300%);}
+    70%{ transform: translateX(-300%);}
+    80%{ transform: translateX(-300%);}
+    90%{ transform: translateX(0%);}
+    100%{ transform: translateX(0%);}
+}
+
+
+
+
+
+
+
+
+
+
+
+

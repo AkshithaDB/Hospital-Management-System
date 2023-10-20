@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Records Form</title>
+</head>
+<body>
+    <h1>Medical Records Form</h1>
+    <style>/* Form Container */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4; /* Form background color */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        orm Labe
+        /* Fls */
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        /* Textareas and Input Fields */
+        textarea, input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+         
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+        
+        /* Submit Button */
+        input[type="submit"] {
+            background-color: #007BFF; /* Button background color */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        /* Submit Button Hover State */
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Button background color on hover */
+        }
+        </style>
+    <form action="records.php" method="post" enctype="multipart/form-data">
+        <label for="diagnosis">Diagnosis:</label>
+        <textarea id="diagnosis" name="diagnosis" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="prescription">Prescription:</label>
+        <textarea id="prescription" name="prescription" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="dosage">Dosage:</label>
+        <input type="text" id="dosage" name="dosage" required><br><br>
+        
+        <label for="reports">Reports:</label>
+        <input type="file" id="reports" name="reports"><br><br>
+        
+        <label for="scans">Scans:</label>
+        <input type="file" id="scans" name="scans"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

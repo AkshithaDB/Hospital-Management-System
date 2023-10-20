@@ -1,0 +1,101 @@
+<html> 
+<head> 
+    <title>Personal Information</title> 
+    <style> 
+        table { 
+            border-collapse: collapse; 
+            width: 100%; 
+        } 
+ 
+        th, td { 
+            border: 1px solid black; 
+            padding: 8px; 
+            text-align: left; 
+        } 
+ 
+        th { 
+            background-color: #f2f2f2; 
+        } 
+ 
+        .no-column { 
+            width: 20%; 
+        } 
+ 
+        .big-column { 
+            width: 40%; 
+        } 
+    </style> 
+</head> 
+<body> 
+    
+    <form action="pres.php" method="POST">
+        <h1>Personal Information</h1>
+        <table>
+            
+
+            <tr>
+                <th>Name</th>
+                <td><input type="text" name="pname"></td>
+            </tr>
+
+            <tr>
+                <th>Phone</th>
+                <td><input type="text" name="phone"></td>
+            </tr>
+
+            <tr>
+                <th>Date of Birth</th>
+                <td><input type="date" name="dob"></td>
+            </tr>
+        </table>
+
+        
+
+        <h2>Card Details</h2>
+        <table>
+            <th>
+                
+                <td>Number/Name</td>
+                <td>Expiry date</td>
+            </th>
+            
+            <tr>
+                <th class="no-column">Health Care Card</th>
+                <td class="big-column"><input type="text" name="h_no"></td>
+                <td><input type="date" name="h_expiry"></td>
+            </tr>
+            <tr>
+                <th class="no-column">Pension Card</th>
+                <td class="big-column"><input type="text" name="p_no"></td>
+                <td><input type="date" name="p_expiry"></td>
+            </tr>
+            
+            <tr>
+                <th class="no-column">Private Health Insurance</th>
+                <td class="big-column"><input type="text" name="hi_name"></td>
+                <td><input type="text" name="hi_no"></td>
+            </tr>
+        </table>
+
+        <h2>Next of Kin/Emergency Contact</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <td><input type="text" name="kin_name"></td>
+            </tr>
+            <tr>
+                <th>Phone Number</th>
+                <td><input type="tel" name="kin_phone"></td>
+            </tr>
+            <tr>
+                <th>Relationship</th>
+                <td><input type="text" name="relationship"></td>
+            </tr>
+        </table><br><br>
+<center>
+        <input type="submit" value="Submit"><br><br>
+    </center>
+    <br><br>
+    </form>
+</body>
+</html>
